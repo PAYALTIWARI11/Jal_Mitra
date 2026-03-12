@@ -66,6 +66,3 @@ Repository: https://github.com/PAYALTIWARI11/Jal_Mitra
 
 Feel free to open issues, submit PRs, or fork for your own improvements.
 
-## License
-
-This project is released under the MIT License. See `LICENSE` for details.
