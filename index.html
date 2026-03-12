@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jal-Mitra | Gram Panchayat Water O&M</title>
+    <!-- favicon to prevent 404 logs -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Load Tailwind CSS via CDN for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Chart.js for data visualization on the Analytics page -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+    <style>
+        /* Custom font and basic scroll behavior */
+        body { font-family: 'Inter', sans-serif; background-color: #f4f7f9; }
+        .page-content { min-height: calc(100vh - 80px); padding-bottom: 6rem; }
+        /* Style for the active navigation tab */
+        .nav-active {
+            color: #059669; /* emerald-600 */
+            border-bottom: 3px solid #059669;
+            font-weight: 600;
+        }
+        /* Style for data entry cards (mobile focus) */
+        .data-card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s;
+        }
+        .data-card:hover {
+            transform: translateY(-2px);
+        }
+        /* Styling for the fault list status tags */
+        .status-tag-Reported { background-color: #fca5a5; color: #b91c1c; } /* Red */
+        .status-tag-Assigned { background-color: #fcd34d; color: #b45309; } /* Amber */
+        .status-tag-InProgress { background-color: #93c5fd; color: #1e40af; } /* Blue */
+        .status-tag-Resolved { background-color: #a7f3d0; color: #065f46; } /* Green */
+
+        /* Radio button style adjustment for touch screens */
+        input[type="radio"]:checked + span { font-weight: bold; }
+        input[type="radio"] { transform: scale(1.2); }
+    </style>
+</head>
+<body>
+    <div id="app" class="max-w-4xl mx-auto bg-white min-h-screen shadow-lg">
+        <!-- Application content will be rendered here -->
+        <div class="p-6 text-center text-gray-500">Initializing Jal-Mitra Application...</div>
+    </div>
+
+    <!-- Load the JavaScript modules (Order is critical: components before app) -->
+    <script type="module" src="./components.js"></script>
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
